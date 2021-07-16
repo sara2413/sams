@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/startFragment2">
+    <fragment
+        android:id="@+id/startFragment2"
+        android:name="com.example.grad_1.fragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_startFragment2_to_std_Login_Fragment"
+            app:destination="@id/std_Login_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.grad_1.fragment.Prof_Login_Fragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login_prof" >
+        <action
+            android:id="@+id/action_loginFragment2_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp_Student_Fragment2"
+        android:name="com.example.grad_1.fragment.SignUp_Student_Fragment"
+        android:label="fragment_sign__up__student"
+        tools:layout="@layout/fragment_sign__up__student" >
+        <action
+            android:id="@+id/action_signUp_Student_Fragment2_to_signUp_Student2_Fragment"
+            app:destination="@id/signUp_Student2_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/email_Code_Fragment"
+        android:name="com.example.grad_1.fragment.Email_Code_Fragment"
+        android:label="fragment_email__code_"
+        tools:layout="@layout/fragment_email__code_" />
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.example.grad_1.fragment.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_password_code_Fragment"
+            app:destination="@id/password_code_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/password_code_Fragment"
+        android:name="com.example.grad_1.fragment.Password_code_Fragment"
+        android:label="fragment_password_code_"
+        tools:layout="@layout/fragment_password_code_" >
+        <action
+            android:id="@+id/action_password_code_Fragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.grad_1.fragment.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.grad_1.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.grad_1.fragment.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_thankYouFragment"
+            app:destination="@id/thankYouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thankYouFragment"
+        android:name="com.example.grad_1.fragment.ThankYouFragment"
+        android:label="fragment_thank_you"
+        tools:layout="@layout/fragment_thank_you" />
+    <fragment
+        android:id="@+id/saraFragment"
+        android:name="com.example.grad_1.fragment.Doctor.SaraFragment"
+        android:label="fragment_sara"
+        tools:layout="@layout/fragment_sara" />
+    <fragment
+        android:id="@+id/std_Login_Fragment"
+        android:name="com.example.grad_1.fragment.Std_Login_Fragment"
+        android:label="fragment_login_std"
+        tools:layout="@layout/fragment_login_std" >
+        <action
+            android:id="@+id/action_std_Login_Fragment_to_signUp_Student_Fragment2"
+            app:destination="@id/signUp_Student_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp_Student2_Fragment"
+        android:name="com.example.grad_1.fragment.SignUp_Student2_Fragment"
+        android:label="fragment_sign_up_student2"
+        tools:layout="@layout/fragment_sign_up_student2" >
+        <action
+            android:id="@+id/action_signUp_Student2_Fragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+</navigation>

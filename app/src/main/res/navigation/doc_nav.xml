@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doc_nav"
+    app:startDestination="@id/add_Subject_Doctor_Fragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.grad_1.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/add_Subject_Doctor_Fragment"
+        android:name="com.example.grad_1.fragment.Doctor.Add_Subject_Doctor_Fragment"
+        android:label="fragment_add__subject__doctor_"
+        tools:layout="@layout/fragment_add__subject__doctor_" >
+        <action
+            android:id="@+id/action_add_Subject_Doctor_Fragment_to_subject_Details_Doctor_Fragment"
+            app:destination="@id/subject_Details_Doctor_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subject_Details_Doctor_Fragment"
+        android:name="com.example.grad_1.fragment.Doctor.Subject_Details_Doctor_Fragment"
+        android:label="fragment_subject__details__doctor_"
+        tools:layout="@layout/fragment_subject__details__doctor_" >
+        <action
+            android:id="@+id/action_subject_Details_Doctor_Fragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doc_Setting_Fragment"
+        android:name="com.example.grad_1.fragment.Doctor.Doc_Setting_Fragment"
+        android:label="fragment_doc__setting_"
+        tools:layout="@layout/fragment_doc__setting_" />
+    <fragment
+        android:id="@+id/doc_Help_Fragment"
+        android:name="com.example.grad_1.fragment.Doctor.Doc_Help_Fragment"
+        android:label="fragment_doc__help_"
+        tools:layout="@layout/fragment_doc__help_" />
+    <fragment
+        android:id="@+id/doc_Logout_Fragment"
+        android:name="com.example.grad_1.fragment.Doctor.Doc_Logout_Fragment"
+        android:label="fragment_doc__logout_"
+        tools:layout="@layout/fragment_doc__logout_" />
+    <fragment
+        android:id="@+id/prof_Login_Fragment"
+        android:name="com.example.grad_1.fragment.Prof_Login_Fragment"
+        android:label="fragment_login_prof"
+        tools:layout="@layout/fragment_login_prof" >
+        <action
+            android:id="@+id/action_prof_Login_Fragment_to_add_Subject_Doctor_Fragment"
+            app:destination="@id/add_Subject_Doctor_Fragment" />
+    </fragment>
+</navigation>

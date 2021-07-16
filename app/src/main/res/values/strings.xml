@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Grad-1</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="subject">
+        <item>Subject Name</item>
+        <item>compiler</item>
+        <item>distributed system</item>
+        <item>security</item>
+
+    </string-array>
+    <string-array name="year">
+        <item>preparatory</item>
+        <item>first year</item>
+        <item>second year</item>
+        <item>third year</item>
+        <item>fourth year</item>
+    </string-array>
+    <string-array name="day">
+        <item>Day</item>
+        <item>saturday</item>
+        <item>sunday</item>
+        <item>monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+    </string-array>
+    <string-array name="hour">
+        <item>9:00</item>
+        <item>10:30</item>
+        <item>12:00</item>
+        <item>1:30</item>
+        <item>3:00</item>
+        <item>4:30</item>
+    </string-array>
+    <string-array name="ap">
+        <item>am</item>
+        <item>pm</item>
+
+    </string-array>
+    <string-array name="hall">
+        <item>Hall Number</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

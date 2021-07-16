@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/subjectFragment3"
+        android:icon="@drawable/ic_educative_books"
+        android:title="Subjects" />
+    <item
+        android:id="@+id/settingsFragment3"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/helpFragment3"
+        android:icon="@drawable/ic_question__1_"
+        android:title="Help" />
+    <item
+        android:id="@+id/logOutFragment3"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+
+
+</menu>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Std_Login_Fragment"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt"
+        android:hint="Your Email"
+        android:textAllCaps="false"
+        android:fontFamily="@font/micross"
+        android:paddingStart="30dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        app:cornerRadius="90dp"
+        android:textColorHint="#B6B7B7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/pass_et"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt"
+        android:hint="Password"
+        android:textAllCaps="false"
+        android:paddingStart="30dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:textColorHint="#B6B7B7"
+        android:fontFamily="@font/micross"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_et"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="#FC6011"
+        android:hint="Log In"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/micross"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/haveAcc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/micross"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:text="Don't have an Account?"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/bt_login"
+        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="750dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/header" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/grad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:fontFamily="@font/segoe_print"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="290dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/micross"
+        android:text="Add your details to login"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/signUp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/micross"
+        android:text="Sign up"
+        android:textColor="#FC6011"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/haveAcc_tv"
+        app:layout_constraintTop_toTopOf="@id/haveAcc_tv"
+        app:layout_constraintVertical_bias="0.316" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

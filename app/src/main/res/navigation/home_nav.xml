@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_nav"
+    app:startDestination="@id/subjectFragment3">
+
+    <fragment
+        android:id="@+id/subjectFragment3"
+        android:name="com.example.grad_1.fragment.sideMenuFragments.SubjectFragment"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject" >
+        <action
+            android:id="@+id/action_subjectFragment3_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_subjectFragment3_to_attendanceFragment"
+            app:destination="@id/attendanceFragment" />
+        <action
+            android:id="@+id/action_subjectFragment3_to_std_Login_Fragment2"
+            app:destination="@id/std_Login_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment3"
+        android:name="com.example.grad_1.fragment.sideMenuFragments.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/settingsFragment3"
+        android:name="com.example.grad_1.fragment.sideMenuFragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/logOutFragment3"
+        android:name="com.example.grad_1.fragment.sideMenuFragments.LogOutFragment"
+        android:label="fragment_log_out"
+        tools:layout="@layout/fragment_log_out" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.grad_1.fragment.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.example.grad_1.fragment.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/std_Login_Fragment2"
+        android:name="com.example.grad_1.fragment.Std_Login_Fragment"
+        android:label="fragment_login_std"
+        tools:layout="@layout/fragment_login_std" >
+        <action
+            android:id="@+id/action_std_Login_Fragment2_to_subjectFragment3"
+            app:destination="@id/subjectFragment3" />
+    </fragment>
+</navigation>
